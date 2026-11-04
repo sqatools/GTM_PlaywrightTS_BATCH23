@@ -1,1 +1,10 @@
 Adding file to feature branch 
+var a=10
+
+if (a%2==0)
+{console.log("a is a even number") 
+}
+
+else()
+{console.log ("a is odd number)
+}
