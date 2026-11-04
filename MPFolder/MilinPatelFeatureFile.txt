@@ -1,1 +1,2 @@
 Learning multi-branching concepts in Git.
+Changed as per the Git PR Review request.
