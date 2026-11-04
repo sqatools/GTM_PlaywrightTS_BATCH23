@@ -6,3 +6,12 @@ working on GitHub
 working on GitHub
 working on GitHub
 working on GitHub
+
+ihjjb
+if(i=1)
+{
+console(1);
+else
+{
+i=2-1;
+}
