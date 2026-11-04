@@ -1,1 +1,8 @@
 working on multibranch content
+if(a%2===0)
+{
+Number is even
+}
+else {
+Number is odd 
+}
