@@ -1,1 +1,2 @@
 Stage: Learning GitHub Fundamentals
+P1, Stage: Learning Github Fundamentals and Resolve Conflict
