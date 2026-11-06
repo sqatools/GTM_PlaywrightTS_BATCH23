@@ -1,0 +1,6 @@
+This is Feature File Demo.
+
+str = "This is VBScript"
+str2 = "Automaton Testing"
+
+msgbox str&str2
