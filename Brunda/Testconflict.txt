@@ -1,1 +1,1 @@
-Stage: Learning GitHub Fundamentals
+P1, Stage: Learning GitHub fundamentals, Push and Pull Operations
