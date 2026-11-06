@@ -1,0 +1,6 @@
+Working on Multi branching concept to add content
+var x=10
+if(a%2==0)
+	console.log("This is even number")
+else
+	console.log("Odd number")
