@@ -1,2 +1,1 @@
-Learning GitHub fundamentals
-P2:Learning GitHub fundamentals-multi branching
+p1,p2 Git hub fundamentals,resolve conflict
