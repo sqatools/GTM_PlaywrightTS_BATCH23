@@ -1,0 +1,10 @@
+vhg
+
+var a=109
+if(a%2==09)
+      {
+  console.log("This is even number")
+}
+else{
+console.log("This is odd number")
+}
