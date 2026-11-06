@@ -1,5 +1,1 @@
-<<<<<<< Updated upstream
-added new text before is nothing.
-=======
-added contain for p2 branch
->>>>>>> Stashed changes
+p1.p2,stage and multi-branching.
