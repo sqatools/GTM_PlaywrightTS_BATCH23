@@ -1,1 +1,2 @@
 Learning GitHub fundamentals
+p1:GitHub fundamentals - resolve conflict
