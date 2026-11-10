@@ -1,1 +1,3 @@
-Code changes are good 
+Learning Git Fundamentals
+Creating a pull request
+merging the pull request
