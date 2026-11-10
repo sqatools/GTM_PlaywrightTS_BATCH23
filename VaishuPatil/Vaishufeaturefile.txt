@@ -1,0 +1,12 @@
+Working on the Multi branching concept
+
+
+var a = 10 
+if (a%2==10)
+{
+console.log ("this is even no")
+}
+else
+{
+console.log ("this is odd no")
+}
