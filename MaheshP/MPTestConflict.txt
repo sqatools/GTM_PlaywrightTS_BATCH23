@@ -1,1 +1,1 @@
-P2, Stage Learning GitHub Fundamentals and Multibranching
+P2,  Stage: Learning GitHub Fundamentals and MultiBranching
