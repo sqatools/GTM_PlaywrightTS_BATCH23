@@ -1,1 +1,1 @@
-Learning Playwright Fundamentals
+Stage: Learning Playwright Fundamentals
