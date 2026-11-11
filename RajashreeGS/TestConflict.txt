@@ -1,1 +1,6 @@
+ HEAD
 stage: Learning GitHub Fundamentals
+
+P2,stage: Learning GitHub Fundamentals
+P1,stage: Learning GitHub Fundamentals Resolve Conflict
+ origin/Rajashree-GS-stage
