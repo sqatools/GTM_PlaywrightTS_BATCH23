@@ -247,6 +247,41 @@ P1, P2, Stage, Learning GitHub Fundamentals and MultiBranching, Resolve Conflict
    -> and verify there is conflict anymore.
 
 
+################ Restore already added file ######################
+1. Create two files.  Name is file1.txt, file2.txt. 
+2. Add both files with the help of the `git add` command. 
+   -> git add file1.txt file2.txt
+
+3. Both files are already added to Git. Now we want to revert one file. We don't want to push both files. 
+   -> lets take example to revert the file1.txt
+   -> Run below command to restore the file. 
+   -> git restore --staged file1.txt
+   -> check status again.
+   -> File1.txt will show in red color and file2.txt will show in a green color. 
+   -> We can push the changes from file2.txt to the server using the `git commit` and `git push` operations. 
+
+################# Clean unwanted files or folder locally ######################
+1. Hey you have some unwanted files and folders available in the 
+  repository locally that are not pushed to the server. 
+  If you want to make it clean, run the below command. 
+
+2. git clean -df 
+   -> it will removed all unwanted or not tracking files or folder permanently.
+
+3. Want to delete a specific file or folder? You can provide the path. 
+  -> git clean -df filepath/folderpath
+
+
+########## Revert changes from already tacked file #############
+1. Open the already edited file locally. 
+2. Check the diff of the file changes using the command below. 
+   -> git diff filename
+   -> it will show diff changes.
+
+3. Now revert the changes with the help of the command below. 
+   -> git checkout . : to revert all files changes.
+   -> git checkout filepath : It will revert specific file changes
+
 
   
 
