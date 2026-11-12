@@ -1,0 +1,250 @@
+// Create a common Repo and provide access to all students. 
+
+After receiving the email you should follow the following steps:
+1. Open your mail.
+2. Click on "View invitation".
+3. Accept the invitation.
+4. You will be able to see the Playwright batch 23 repository in your account.
+
+Note : Make sure that you are accepting the invitation from a laptop not from a mobile. Whenever you accept the invitation you should already be logged in with your GitHub account on the same browser.
+
+# Clone common repo to local folder. 
+1. Go to the C:\gitcode folder, and open the Git terminal inside it. 
+   -> Right-click. 
+    -> More options 
+    -> Select "Open Git Bash here." 
+    -> It will open git terminal in gitcode folder.
+
+2. Copy the repository URL from the server. 
+   -> 1. Go to server.
+   -> 2. Open common repository.
+   -> 3. Click on the Code Fold Code button.
+   -> 4. Copy Repo URL.
+
+3. Open your Git terminal and run the command below. 
+   -> git clone https://github.com/sqatools/GTM_PlaywrightTS_BATCH23.git
+   -> Sure there is no extra value before https or after .git
+   -> Click Enter. 
+   -> The repository will be cloned locally inside your GitHub code folder 
+   -> it will auto-create the repository folder inside the GitHub code folder with name GTM_PlaywrightTS_BATCH23
+
+
+################ Create stage and push code to branch ############
+1. Create a stage branch from main branch.
+   Name : DYStageBranch
+   Source Branch : Main Branch
+
+   ->  go to the GitHub repository on the server.
+   ->  click main branch dropdown
+   -> Click on "View all branches."
+   -> Click on  On New Branch button.
+   -> Provide your branch name. For example I provided the name as DYStageBranch.
+   -> Sure your branch name is unique.
+
+2. Create a feature branch from the stage branch.
+   ->  go to the GitHub repository on the server.
+   ->  click main branch dropdown
+   -> Click on "View all branches."
+   -> Click On New Branch button.
+   -> Provide feature branch name : DyFeatureBranch
+   -> Source Branch should be your stage branch :  DYStageBranch
+
+3. Open git terminal in Repository locally.
+   
+   -> git pull : it will pull all the information from server to local system.
+   -> check your current branch.
+      -> git branch 
+      -> it will show main as current active branch in green color.
+
+4. Switch to feature branch.
+   -> git checkout DyFeatureBranch
+   -> It will switch to feature branch
+   -> git branch
+   -> Now your feature branch will show as active branch.
+   
+5. Add File to feature branch and push to the server. 
+   -> Create folder insider repository directory 
+   -> Create a folder with your name, for example, DeepeshY. 
+   -> Create a file inside your name, like DYFeatureFile.txt
+   -> Add some content to the file and save the file. 
+
+6. Open Git terminal and push code to the server.
+   -> git status :  new folder will show in red color
+   -> git add foldername 
+   -> git status : folder with filename will show in green color
+   -> git commit -m "added new feature file"
+   -> git push : It will push code to GitHub server.
+   -> Go to the server and verify the folder should be available in your feature branch. 
+    
+7. Create a pull request from the feature branch to the stage branch. 
+   -> Click on the "Compare and pull request" button. 
+   -> Provide a pull request title. 
+   -> Provide a pull request description. 
+   -> Add the reviewers from the gear button. 
+   -> Make sure to select your target branch as the stage branch. 
+      The default is the main branch so we have to change it to the stage branch. 
+
+   -> Then click on "Create pull request." button.
+   -> Once the pull request is created successfully 
+   -> Pull request will be listed inside the "Pull Request" tab. 
+
+########### Resolve merge conflict scenario.  ####################
+
+1. We have one file in a Stage branch. 
+   Filename : testConflict.txt 
+   content:  -> Stage :Learning GitHub Fundamentals
+
+2. Person 1 has created his own branch from the Stage branch. 
+   Branch Name : P1_Branch
+   Filename : testConflict.txt 
+   content : P1, Stage :Learning GitHub Fundamentals, Multibranching
+   -> update the file and push code to branch.
+
+3. Person 2 has created his own branch from the Stage branch. 
+   Branch Name : P2_Branch
+   Filename : testConflict.txt 
+   content : P2, Stage :Learning GitHub Fundamentals and pull push operations
+   -> update the file and push code to branch.
+
+
+4. P1 Create Pull request and merge code stage branch
+   P1_branch -> Stage Branch
+	   
+   old content : Stage :Learning GitHub Fundamentals
+   new content : P1, Stage :Learning GitHub Fundamentals, Multibranching
+
+
+5. P2 create pull request and try to merge code stage branch.
+ 
+####### implementation ######################
+-> Open Git terminal in repository folder. 
+-> Check your current active branch. 
+   -> git branch : It will show you branch as active branch.
+
+-> Switch to your stage branch. 
+   -> git checkout DyStageBranch
+   -> And it will switch branch to stage branch. 
+
+-> Update stage branch from main branch content. 
+   -> git pull origin main 
+   -> It will update all the content from the main branch to the stage branch. 
+   -> Push all the changes to the server to stage branch
+   -> git push
+
+-> Go to your server and verify all the folders are available in your stage branch. 
+
+###################################
+1. Create a file with inside your dedicated folder 
+   Folder Name : DeepeshY
+   Filename : TestConlict.txt
+   Content : Stage: Learning GitHub Fundamentals
+
+2. Push file to stage branch
+   -> git status : file will show in red color
+   -> git add filename
+   -> git status : file will show in green color
+   -> git commit -m "added file to stage branch"
+   -> git push
+   -> File pushed to server successfully on stage branch. 
+
+3. Create 2 branch locally with unique name
+   Branch1 Name : Dy_P1_Branch
+   Branch2 Name : Dy_P2_Branch
+
+4. create P1 branch from stage branch 
+   -> git checkout -b Dy_P1_Branch
+   -> It will create new branch and switch to the branch as well.
+   -> switch back stage branch.
+   -> git checkout DyStageBranch
+
+
+4. create P2 branch from stage branch 
+   -> git checkout -b Dy_P2_Branch
+   -> It will create new branch and switch to the branch as well.
+
+
+5. Update test fixture file in Dy_P2_Branch. 
+   -> Filename : TestConflict.txt
+   -> current content : Stage: Learning GitHub Fundamentals
+   -> Updated content : P2,  Stage: Learning GitHub Fundamentals and MultiBranching
+   -> Save file
+   -> Push file changes to server
+      -> git status, 
+      -> git add filename, 
+      -> git commit -m "updated file cotent"
+      -> git push
+      -> As we are pushing this branch for the first time we have to run the command below. 
+      -> git push --set-upstream origin Dy_P2_Branch
+      -> Push is successful. File changes should be available on the server. 
+      -> check branch is available on the server as well as the file contents.
+
+
+6. Repeat same process of Dy_P1_Branch branch.
+   -> git checkout Dy_P1_Branch
+   -> Filename : TestConflict.txt
+   -> current content : Stage: Learning GitHub Fundamentals
+   -> Updated content : P1, Stage: Learning GitHub Fundamentals and Resolve Conflict
+   -> Save file
+   -> Push file changes to server
+      -> git status, 
+      -> git add filename, 
+      -> git commit -m "updated file content"
+      -> git push
+      -> As we are pushing this branch for the first time we have to run the command below. 
+      -> git push --set-upstream origin Dy_P1_Branch
+      -> Push is successful. File changes should be available on the server. 
+      -> check branch is available on the server as well as the file contents.
+
+7. Create a pull request from Dy_P1_Branch to DyStagebranch to stage branch and merge it.    
+     -> click on compare & pull request button for Dy_P1_Branch.
+     -> Provide pull request title and description
+     -> change target branch from main branch to DyStageBranch.
+     -> Add reviewers from gear icon
+     -> click on create pull request button.
+     -> Get the approval and merge changes from DY_P1_Branch to DyStageBranch branch.
+
+
+7. Create a pull request from Dy_P2_Branch to DyStagebranch to stage branch.
+     -> click on compare & pull request button for Dy_P2_Branch.
+     -> Provide pull request title and description
+     -> change target branch from main branch to DyStageBranch.
+     -> Add reviewers from gear icon
+     -> click on create pull request button
+ 
+8. Resolve the merge conflict issue on a Dy_P2_Branch and then merge the changes. 
+     -> go back to git terminal
+     -> switch to Dy_P2_Branch
+        -> git checkout Dy_P2_Branch
+
+     -> pull changes from DyStageBranch to Dy_P2_Branch
+        -> git pull origin DyStageBranch
+
+9. We have to fix the conflict issue locally and then push changes to the Dy_P2_Branch branch. 
+
+This is conflict content:
+
+
+Updated content.
+
+P1, P2, Stage, Learning GitHub Fundamentals and MultiBranching, Resolve Conflict
+
+
+# Push code changes to the server. 
+    -> git status
+    -> git add filename
+    -> git commit -m "resolved conflict"
+    -> git push
+    -> it will updated content to server
+
+
+10. Go back to the server in the Dy_P2_Branch pull request and check that there is no conflict anymore and that it has resolved successfully. 
+   -> click on merge pull request button.
+   -> and verify there is conflict anymore.
+
+
+
+  
+
+   
+
+  
