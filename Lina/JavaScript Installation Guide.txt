@@ -1,0 +1,4 @@
+go to your dedicated folder 
+right clcik on folder "New folder"
+provide a new terminal in 'javascript folder'npm : File C:\Program Files\nodejs\npm.ps1 cannot be loaded because running scripts is 
+ 
