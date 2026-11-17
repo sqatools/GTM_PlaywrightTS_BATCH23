@@ -1,0 +1,56 @@
+1. Go to your dedicated folder. 
+2. Right-click on the folder, then click on "new folder." 
+3. Provide a new folder name as 'JavaScriptCode'. 
+4. Open Git terminal in 'JavaScriptCode' folder. 
+      -> Right-click on the JavaScriptCode folder. 
+      -> Select option: Open in integrated Terminal. 
+      -> it Will open terminal in dedicated folder for 'JavaScriptCode'
+
+5. Run the command below to initialize the JavaScript configuration. 
+     ->  npm init -y
+     ->  if You are facing a disabled permission issue. Run the below command.
+     ->  Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+     ->  Re-execute the above command again.  
+     ->  npm init -y
+     ->  The `npm init -y` command is successful. It will create one package.json file in your dedicated folder. 
+
+
+6. Those who are facing any kind of error while executing the `npm init` command.  
+   -> Below steps to resolve the issue 
+   -> Check the error and copy the entire error.
+   -> In VS Code, open your AI chat window.
+      -> Top bar: there is a chat icon. Click on it. It will open the Copilot chat window. 
+   -> Write a message in the chat window: Fix this error, 
+     and below this, copy-paste the entire error that you were facing. 
+
+   -> GitHub Copilot Agent will fix all your permission issues in your system and help you to execute the npm command. 
+
+ 
+7. create First program file and execute it.
+   -> Right-click on the JavaScriptCode practice folder. 
+   -> select 'New file' option 
+   -> Provide the file name as 'firstProgram.js'
+   -> Below content 
+   -> console.log("Hello world")
+   -> Now save the file.  (Ctrl + S)
+
+   -> Go back to the GitHub terminal, which we have opened 
+      already inside the JavaScriptCode folder. 
+   -> Below command to execute the file 
+   ->  node ./FirstProgram.js
+   ->  It will execute the code and print the "Hello World" program.
+
+8. All plugins to execute your JavaScript code  
+   -> Click on the extension dice icon on the left side of your VS Code. 
+   -> It will open one extension search bar. 
+   -> Now search for the 'Code Runner' extension. 
+   -> Code runner extension will be listed at the top with the .run icon. 
+   -> Click on the code runner extension open it.
+   -> click On install button complete the installation.
+
+   -> Now open any of the JavaScript files that we have created.
+   -> Now check on the rightmost corner of the file name. 
+      The play button is going to be visible. 
+
+    -> Click on the play button, and the file code will execute and 
+      show output in the console. 
