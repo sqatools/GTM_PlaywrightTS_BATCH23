@@ -78,10 +78,77 @@ console.log(bign, ":", typeof bign)
 //2. Non-primitive: primitive data types are those data types which can handle 
 // multiple values at a time, and they are mutable in nature. 
 
-/*
-1. Array data type 
-2. Then object datatype 
-3. Set data type. 
-4. Function data type 
 
+console.log("____________________________________")
+//1. Array data type : 
+ /*
+ - Array is a mutable data type. It can be modified at any point in time. 
+ - Array can contain any type of value. 
+ - Array follows positive or negative indexing, like string. 
+ - Array stores values in square brackets. 
+ */
+//          0  1   2       3           4    5         6      7         8
+var arr1 = [6, 8, 'Hello', [7, 8, 2], true, {a: 123}, null, undefined, 8]
+//         -9 -8   -7      -6          -5   -4        -3     -2        -1
+
+console.log(arr1[2]) // Hello
+console.log(arr1[3]) // [ 7, 8, 2 ]
+console.log(arr1[3][1], arr1[4]) // 8 true
+
+var arr2 = [5, 6, 7]
+arr2.push(100)
+console.log(arr2) // [ 5, 6, 7, 100 ]
+
+
+console.log("------------------------------------")
+// 2. Then object datatype 
+/*
+- An object can store values in key-value pairs. 
+- An object can contain only unique keys. Duplicate keys are not allowed. 
+- Object does not follow indexing. 
+- Object can store duplicate values. 
 */
+
+var UserDetails = {
+    UserName : "Ravi",
+    Email : "ravi@gmail.com",
+    Phone: 87998798798,
+    Address: "Pune, Viman Nagar"
+}
+
+console.log(UserDetails)
+// Data from object using key 
+console.log(UserDetails["UserName"]) // Ravi
+console.log(UserDetails.Email, UserDetails.Phone) // ravi@gmail.com
+
+// add new key data object
+UserDetails.city = "Pune"
+console.log(UserDetails)
+
+console.log("----------------- Set data type -----------")
+// 3. Set data type. :
+//  A set is one of the data types that store only unique values. 
+// No duplicate values are allowed. It does not follow indexing. 
+// It does not store values in key-value format, but only maintains the unique data. 
+
+var arr3 = [4, 5, 6, 5, 6, 5, 6, 7, 8, 4]
+var set1 = new Set(arr3)
+console.log(set1) // { 4, 5, 6, 7, 8 }
+
+// 4. Function data type  : A function is a block of code that we write in a function, You can call any number of times. 
+function greeting() {
+    console.log("Hello Welcome to JavaScript Learning")
+}
+
+greeting()
+greeting()
+greeting()
+
+function addition(n1, n2) {
+    console.log("Addition :", n1+n2)
+}
+
+addition(30, 40)
+addition(60, 70)
+// Addition : 70
+// Addition : 130
