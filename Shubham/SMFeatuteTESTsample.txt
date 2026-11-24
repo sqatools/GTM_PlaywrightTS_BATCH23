@@ -1,1 +1,11 @@
 hii
+
+var a = 10
+if (a%2 ==0)
+{
+console.log("This is even number")
+}
+else
+{
+console.log("this odd number")
+}
