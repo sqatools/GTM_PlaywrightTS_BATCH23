@@ -9,3 +9,6 @@ else
 {
 console.log("this odd number")
 }
+
+
+updated code as per req
