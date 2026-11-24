@@ -33,3 +33,26 @@ if(e>f && e>g){
   } else {
     console.log("no number is grater than each other");
   }
+//write programe wright nested if condition
+var r1="pass";
+var r2="pass";
+var r3="pass";
+if(r1=="pass"){
+    console.log("r1 round is pass");
+    if(r2=="pass"){
+        console.log("r2 round is pass");
+        if(r3=="pass"){
+            console.log("r3 round is pass");
+        } else {
+            console.log("r3 round is fail");
+        }
+    } else {
+        console.log("r2 round is fail");
+    }
+} else {
+    console.log("r1 round is fail");
+}
+//Tertory oprator
+var num =20;
+result=(num%2==0)?"num is even":"num is odd";
+console.log(result);
