@@ -184,3 +184,40 @@ q %= 4; // equivalent to q = q % 4
 console.log("Value of q is: " + q )
 
 
+//comparison operators
+var a = 10;
+var b = 20;
+var c = "10";
+console.log("Is a equal to b? " + (a == b))
+console.log("Is a equal to c? " + (a == c))
+console.log("Is a equal to c? " + (a === c))
+
+console.log("Is a not equal to b? " + (a != b))
+console.log("Is a not equal to c? " + (a != c))
+console.log("Is a not equal to c? " + (a !== c))
+
+console.log("Is a less than b? " + (a < b))
+console.log("Is a greater than b? " + (a > b))
+
+console.log("Is a less than or equal to b? " + (a <= b))
+console.log("Is a greater than or equal to b? " + (a >= b))
+
+//Logical operators
+/*
+TRUE && TRUE = TRUE
+TRUE && FALSE = FALSE
+FALSE && TRUE = FALSE
+FALSE && FALSE = FALSE
+
+TRUE || TRUE = TRUE
+TRUE || FALSE = TRUE
+FALSE || TRUE = TRUE
+FALSE || FALSE = FALSE
+*/
+
+var a = 20;
+var b = 30;
+var c = 40;
+
+//TRUE && FALSE = FALSE
+console.log("Is a less than b and b Greater than c? " + (a < b && b > c))
