@@ -1,0 +1,9 @@
+// npm install prompt-sync
+
+// Always take input from the user in string format only. 
+
+const prompt = require("prompt-sync")({sigint: true})
+
+const username = prompt("Enter your username: ")
+
+console.log(username)
