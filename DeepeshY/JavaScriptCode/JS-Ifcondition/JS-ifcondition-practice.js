@@ -75,3 +75,58 @@ else if (L > J && L > K) {
 } else {
     console.log("No one has greate value")
 }
+
+
+console.log("------------------ Nested if condition -----------------")
+// If one condition is dependent on another condition, then it is called a nested if condition. 
+/*
+if(condition1) {
+    code block
+    if(condition2) {
+        code block
+        if(condition3) {
+            code block
+        } else {
+            code block
+        }
+    } else {
+        code block
+    }
+} else {
+    
+    code block
+}
+*/
+
+// Write a program to simulate a nested if condition with an interview process. 
+var round1 = 'pass'
+var round2 = 'pass'
+var round3 = 'pass'
+
+if(round1 == 'pass') {
+    console.log("congrats 1st round is clear")
+    if(round2 == 'pass') {
+         console.log("congrats 2nd round is clear")
+         if(round3 == 'pass') {
+            console.log("congrats you are selected")
+         } else {
+            console.log("sorry failed in 3rd round")
+         }
+    } else {
+        console.log("sorry failed in 2nd round")
+    }
+} else {
+     console.log("sorry failed in 1st round")
+}
+
+
+console.log("---------------------Ternary Operator ---------------------")
+// var result = condition ? true output : false output
+
+var num = 21
+result = num%2 == 0 ? "This is even number": "This is odd number"
+console.log(result)
+
+var m1 = 28
+console.log(m1%3 == 0? "this is divisle by 3" : "this is not divisible by 3") 
+
