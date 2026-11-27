@@ -238,3 +238,18 @@ for(var i=1; i<=5; i++){
     }
     console.log(temp)
 }
+
+
+console.log("----------------Apply loop on string-----------------")
+// on a string using the `in` operator and the `of` operator
+
+var str = "Learning Javascript"
+for(var c of str){
+    console.log(c)
+}
+
+console.log("*********************************************")
+var str1 = "Learning Javascript"
+for(var i in str1){
+    console.log(i, str[i])
+}
