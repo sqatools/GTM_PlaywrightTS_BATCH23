@@ -309,3 +309,29 @@ var arr1 = [45, 'Hello', [5, 7, 8], {a: 123}, true]
 for(var v1 of arr1) {
     console.log(v1)
 }
+
+console.log("------------------")
+for(var i=0; i<=arr1.length; i++) {
+    console.log(i, arr1[i])
+}
+/*
+0 45
+1 Hello
+2 [ 5, 7, 8 ]
+3 { a: 123 }
+4 true
+5 undefined
+*/
+
+console.log("------------in operator with array-----")
+for(var j in arr1) {
+    console.log(j, arr1[j])
+}
+
+/*
+0 45
+1 Hello
+2 [ 5, 7, 8 ]
+3 { a: 123 }
+4 true
+*/
