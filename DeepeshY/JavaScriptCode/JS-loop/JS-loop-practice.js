@@ -207,8 +207,6 @@ for(var i=1; i<=5; i++) {
 
 
 /*
-
-
 *         *
 *         *
 *         *
@@ -220,6 +218,94 @@ for(var i=1; i<=5; i++) {
     *
     * 
     * 
-* * * * *   
-   
+* * * * *
 */
+
+console.log("---------------while condition----------")
+/*
+A while loop will execute till the condition is true. Once it is false, the loop will automatically terminate. 
+while(condition) {
+    code block
+}
+
+// If you want to execute any program with the `for` loop and/or `while` loop, 
+// if the number of occurrences is clear, go for the `for` loop. 
+// If the condition is not clear, then go for the `while` loop. 
+*/
+
+var num=1
+while(num <=10) {
+    console.log(num)
+    num += 1
+}
+
+/*
+
+// Create an infinite while loop. 
+var n=1
+while(true) {
+    console.log(n)
+    //n += 1
+    ++n
+    if(n == 1001) {
+        console.log("Loop execution completed")
+        break
+    }
+}
+
+// Write a program to create one calculator. 
+while(true) {
+    console.log("---------Welcome to Calc App --------")
+    const prompt = require("prompt-sync")()
+    var num1 = Number(prompt("Enter first value :"))
+    var num2 = Number(prompt("Enter Second value:"))
+    var opt = prompt("Select operation : \n1. Addition\n2. multiplication\n3.subtraction\n4. division\n")
+    if(opt == '1') {
+        console.log("addition :", num1+num2)
+    } else if(opt == '2') {
+        console.log("multiplication :", num1*num2)
+    } else if(opt == '3') {
+        console.log("subtraction :", num1-num2)
+    } else if(opt == '4') {
+        console.log("divion :", num1/num2)
+    } else {
+        break
+    }
+}
+*/
+
+console.log("----------------- do while loop -----------")
+// do-while loop : do-while loop program executes at least once, even if the condition is true or false. 
+/*
+// syntax
+do{
+    code block
+} while(condtion)
+*/
+
+var k =1
+do {
+    console.log(k)
+    k += 1 // k = k + 1
+} while(k >=10)
+
+console.log("----------------Apply loop on string-----------------")
+// on a string using the `in` operator and the `of` operator 
+
+var str1 = "JavaScript"
+for(var chr of str1) {
+    console.log(chr)
+}
+// The `in` operator provides you with the index of each character. 
+console.log("-------------------")
+for(var i in str1) {
+    console.log(i, str1[i])
+}
+
+
+console.log("-----------Apply loop on array values----------------")
+var arr1 = [45, 'Hello', [5, 7, 8], {a: 123}, true]
+
+for(var v1 of arr1) {
+    console.log(v1)
+}

@@ -19,15 +19,7 @@ if(n%3==0 && n%5==0){
     console.log(n);
     break;
 }
-//check number is prime or not
-var n1=15;
-var prime=true;
-for(var i=2;i<=n1;i++){
-console.log(i);
-if(n1%i==0){
-    prime=false;
-    break;
-}
+
 
 }
 if(prime==false){
@@ -35,4 +27,16 @@ console.log("prime number is :" ,n1);
 } else{
    console.log("prime number is not :" ,n1); 
 }
+
+//outer loop
+for(var i=1;i<=4;i++){
+console.log("addition",i);
+for(var j=1;j<=3;j++){
+console.log("addition j",j);
 }
+console.log("----------------------------");
+
+
+
+}
+
